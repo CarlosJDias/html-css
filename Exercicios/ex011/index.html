@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="Imagens/Carlinhos.com.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou 
+    simplismente aumente e dimunua o tamanho do seu navegador.
+    </p>
+
+    <Picture>
+        <source media="(max-width: 655px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 960px)" srcset="Imagens/foto-M.png" type="image/png">
+      <img src="Imagens/foto-G.png" alt="Imagem flexível"> 
+    </Picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p> <!--Basicamente é compativél com MP3, WAV, OGG-->
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>  <!--Maneira simples de add um áudio em HTML5-->
+    <br>
+        <audio preload="auto" controls autoplay loop> <!--Segunda Maneira--> 
+            <!--Loop serve para o áudio reiniciar quando terminar-->
+            <!-- Junto ao parametro Preload pode adiconado os comandos auto, metadata ou none/ o padrão é auto-->
+
+             <source src="midia/happy-mistake-mp3.mp3" type="audio/mpeg">
+             <source src="midia/happy-mistake-ogg.ogg" type="audio/ogg">
+             <source src="midia/happy-mistake-wav.wav" type="audio/wav"> <!--Obs: Arquivo WAV é o menos indicado-->
+             
+        </audio> <p>Infelizmente seu navegador não consegue repoduzir áudios.
+             <a href="midia/guanacast-33.zip" download="guanacast-33.zip" type="application/zip">Clique aqui para baixar o arquivo MP3</a></p>
+    </br>
+    
+</body>
+</html> 
